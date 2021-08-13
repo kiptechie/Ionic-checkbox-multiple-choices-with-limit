@@ -18,7 +18,7 @@
     <ion-list lines="none">
       <ion-item *ngFor="let jibu of item?.choices" class="ion-text-wrap">
         <ion-label class="ion-text-wrap">{{jibu?.text}}</ion-label>
-        <ion-checkbox [(ngModel)]="jibu.isChecked" slot="start" (click)="validateCheckbox(item, jibu)"
+        <ion-checkbox [(ngModel)]="jibu.isChecked" slot="start" (click)="validateCheckbox(item)"
           [disabled]="jibu.disabled"></ion-checkbox>
       </ion-item>
     </ion-list>
